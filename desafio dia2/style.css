@@ -1,0 +1,97 @@
+* {
+    font-family: "Roboto", monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #191970;  /* fallback for old browsers */
+    background:-webkit-radial-gradient(to top, #5ba1cf, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #000000, #6daed3, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    color: #F0F8FF;
+    margin: 10vh 0;
+    font-size: 45px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+#form-inicial #form-final {
+    text-align: center;
+    margin: 0 10vh;
+}
+
+input, label {
+    font-size: 20px;
+    font-style: italic;
+}
+
+#contem-botoes {
+    width: 36vh;
+    margin: 7vh auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao {
+    text-align: center;
+    width: 14vh;
+    height: 5vh;
+    background: radial-gradient(#e7d296 25%, #1e2a31);
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 18px 0 18px 0;
+    border-color: #2a2f31;
+}
+
+#form-inicial .grupo-input {
+    width: 90%;
+    margin: auto;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pergunta {
+    color: whitesmoke;
+    font-size: 22px;
+    margin-bottom: 2vh;
+}
+
+#form-inicial .input-padrao {
+    color: #e8ebf3;
+    background-color: transparent;
+    text-align: center;
+    height: 6vh;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+
+#form-final #contem-opcoes {
+    width: 25vh;
+    margin: 5vh auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+#form-final input[type="radio"] + label {
+    color: white;
+}
+
+
+
