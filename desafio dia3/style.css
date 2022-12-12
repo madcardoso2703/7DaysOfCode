@@ -1,0 +1,98 @@
+{
+    font-family: "Roboto", monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #191970; 
+    background:-webkit-radial-gradient(to top, #5ba1cf, #000000); 
+    background: linear-gradient(to bottom, #000000, #6daed3, #000000);
+   
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo {
+    color: #F0F8FF;
+    margin: 10vh 0;
+    font-style: italic;
+    
+}
+
+section {
+    text-align: center;
+    width: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.pergunta {
+    color: #ccdddf;
+}
+
+.container-resposta {
+    width: 100%;
+    margin: 8vh 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    
+}
+
+.container-resposta input[type="radio"] + label {
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 6px;
+    
+}
+
+button {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    height: 7vh;
+    width: 19vh;
+    background-color: aliceblue;
+    border-color: azure;
+    border-radius: 15px 0 15px 0;
+}
+
+.container-tecnologia {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh 0;
+}
+
+.container-tecnologia input {
+    font-size: 18px;
+    color: #dae0bb;
+    background-color: transparent;
+    text-align: center;
+    height: 6vh;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-right: 2vh;
+}
+
+.container-tecnologia button {
+    font-size: 30px;
+    font-weight: bold;
+    height: max-content;
+    width: 8vh;
+}
