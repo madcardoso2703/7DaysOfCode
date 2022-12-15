@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #00B4DB;
+    background: -webkit-linear-gradient(to top, #0083B0, #00B4DB);
+    background: linear-gradient(#000000, #464444, #B0E0E6, #464444, #000000);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#calculadora {
+    background: linear-gradient(#0957e78e, #0505058e, #0957e78e);
+    padding: 45px;
+    border-radius: 60px 0 60px 0;
+    
+    
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 10px black;
+}
+
+#display {
+    width: 300px;
+    height: 85px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    border: 2px inset rgba(255, 255, 255, 0.5);
+    margin: 15px 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#output-principal, #output-auxiliar {
+    text-align: right;
+    width: 100%;
+    padding: 5px;
+    border: none;
+}
+
+#output-principal {
+    font-size: 1.8rem;
+    white-space: nowrap;
+
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+}
+
+#output-principal::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+
+#output-auxiliar {
+    font-size: 1rem;
+}
+
+#painel-botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    margin: 15px 0;
+}
+
+button {
+    text-align: center;
+    background: rgba(158, 207, 240, 0.781);
+    font-size: 1.7rem;
+    width: 64px;
+    height: 64px;
+    border-radius: 20px 0 20px 0;
+    border-color: #464444;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+
+    transition: box-shadow 0.3s ease, trasform 0.3s ease;
+}
+
+#botao-calcular {
+    width: 100%;
+    color: rgb(15, 16, 71);
+    background-color: #08d3a7;
+    border-color: #B0E0E6;
+    font-weight: bold;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 5;  
+}
+
+
+#botao-limpar {
+    width: 100%;
+    color: white;
+    background-color: #091299;
+    border-color: #3c3fbd;
+    font-weight: bold;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;   
+}
+
+button:active {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4), inset 2px 2px 5px rgba(255, 255, 255, 0.3);
+    transform: translate(2px, 2px)
+}
+
+
+
